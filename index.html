@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordered and Unordered Lists</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7ff, #e8f0ff);
+            color: #1f2937;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4f46e5;
+            font-family: Georgia, serif;
+            font-size: 38px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        ol, ul {
+            line-height: 2;
+            font-size: 18px;
+            padding-left: 30px;
+        }
+
+        /* Ordered List Cards */
+        .ordered {
+            border-left: 6px solid #6366f1;
+        }
+
+        .ordered h2 {
+            color: #4f46e5;
+        }
+
+        .ordered ol {
+            color: #4338ca;
+        }
+
+        .ordered li::marker {
+            color: #f97316;
+            font-weight: bold;
+        }
+
+        /* Unordered List Cards */
+        .unordered {
+            border-left: 6px solid #ec4899;
+        }
+
+        .unordered h2 {
+            color: #db2777;
+        }
+
+        .unordered ul {
+            color: #be185d;
+        }
+
+        .unordered li::marker {
+            color: #10b981;
+        }
+
+        li {
+            padding: 4px;
+            transition: 0.2s;
+        }
+
+        li:hover {
+            color: #111827;
+            font-weight: bold;
+            cursor: pointer;
+            transform: translateX(5px);
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>✨ My Favourite Lists ✨</h1>
+
+    <div class="container">
+
+        <div class="box ordered">
+            <h2>☕ Steps to Make Tea</h2>
+            <ol>
+                <li>Boil water</li>
+                <li>Add tea powder</li>
+                <li>Add milk</li>
+                <li>Add sugar</li>
+            </ol>
+        </div>
+
+        <div class="box ordered">
+            <h2>🌅 Morning Routine</h2>
+            <ol>
+                <li>Wake up</li>
+                <li>Brush teeth</li>
+                <li>Take a bath</li>
+                <li>Have breakfast</li>
+            </ol>
+        </div>
+
+        <div class="box ordered">
+            <h2>💻 Web Development</h2>
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+                <li>Build Projects</li>
+            </ol>
+        </div>
+
+        <div class="box ordered">
+            <h2>🍔 Ordering Food</h2>
+            <ol>
+                <li>Open food app</li>
+                <li>Select restaurant</li>
+                <li>Choose food</li>
+                <li>Place order</li>
+            </ol>
+        </div>
+
+        <div class="box unordered">
+            <h2>🍎 Fruits</h2>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+                <li>Orange</li>
+            </ul>
+        </div>
+
+        <div class="box unordered">
+            <h2>👩‍💻 Programming Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+            </ul>
+        </div>
+
+        <div class="box unordered">
+            <h2>🖥️ Computer Components</h2>
+            <ul>
+                <li>Processor</li>
+                <li>RAM</li>
+                <li>Hard Disk</li>
+                <li>Motherboard</li>
+            </ul>
+        </div>
+
+        <div class="box unordered">
+            <h2>🎨 Hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Drawing</li>
+                <li>Listening to Music</li>
+                <li>Watching Movies</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
